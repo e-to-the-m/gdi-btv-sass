@@ -1,0 +1,9 @@
+@import "_vars";
+// This imports our styles from the _vars.scss so we can use them in our project
+
+@import "general-styles";
+@import "navigation";
+@import "header";
+@import "main";
+@import "footer";
+@import "media-queries";

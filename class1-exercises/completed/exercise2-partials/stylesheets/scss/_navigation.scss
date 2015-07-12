@@ -1,0 +1,32 @@
+nav li {
+  float: left;
+}
+nav li a {
+  color: #fff;
+  margin: 0 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+nav li a:hover {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  color: #FB000D;
+}
+
+.jump {
+  color: #565656;
+  font-family: 'EntypoRegular';
+  font-size: 70px;
+  line-height: 80px;
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+}
+.jump.up {
+  left: 15px;
+}
+.jump.down {
+  right: 15px;
+}
+.jump:hover {
+  color: #BC2F36;
+}

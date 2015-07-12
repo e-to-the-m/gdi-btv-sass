@@ -1,0 +1,20 @@
+footer {
+  background-image: -webkit-linear-gradient(#00665F, #1D766F, #00665F);
+  background-image: -moz-linear-gradient(#00665F, #1D766F, #00665F);
+  background-image: linear-gradient(#00665F, #1D766F, #00665F);
+  nav {
+    float: left;
+    font-size: 1.1em;
+    margin: 10px;
+    a:hover {
+      box-shadow: none;
+      color: #FFEECC;
+    }
+  }
+  &:after {
+    /* clearfix hack */
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

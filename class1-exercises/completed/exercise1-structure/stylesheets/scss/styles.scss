@@ -83,10 +83,10 @@ nav li {
   text-decoration: none;
   top: 0;
   &.up {
-    left: 15px;    
+    left: 15px;
   }
   &.down {
-    right: 15px;    
+    right: 15px;
   }
   &:hover {
     color: #BC2F36;
@@ -107,7 +107,7 @@ header {
     font-size: 1.2em;
     margin-left: 20px;
     li {
-      line-height: 75px;    
+      line-height: 75px;
     }
     a {
       border-radius: 6px;
@@ -147,7 +147,7 @@ header {
 #famous {
   h2 {
     text-shadow: 1px 1px 2px #009D92;
-  }  
+  }
   article.woman {
     background-color: white;
     float: left;
@@ -287,11 +287,11 @@ footer {
 /* Fonts */
 @font-face {
   font-family: 'EntypoRegular';
-  src: url('font/Entypo-webfont.eot');
-  src: url('font/Entypo-webfont.eot?#iefix') format('embedded-opentype'),
-       url('font/Entypo-webfont.woff') format('woff'),
-       url('font/Entypo-webfont.ttf') format('truetype'),
-       url('font/Entypo-webfont.svg#EntypoRegular') format('svg');
+  src: url('../../font/Entypo-webfont.eot');
+  src: url('../../font/Entypo-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../../font/Entypo-webfont.woff') format('woff'),
+       url('../../font/Entypo-webfont.ttf') format('truetype'),
+       url('../../font/Entypo-webfont.svg#EntypoRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }

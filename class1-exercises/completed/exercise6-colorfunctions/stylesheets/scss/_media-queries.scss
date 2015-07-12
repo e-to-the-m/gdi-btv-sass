@@ -1,0 +1,57 @@
+/** Tablet view **/
+@media screen and (max-width: $layoutWidth){
+  h1 {
+    font-size: 1.1em;
+    line-height: 40px;
+  }
+  header nav li{
+    line-height: 40px;
+  }
+}
+/** Mobile view **/
+@media screen and (max-width: 480px){
+  h1{
+    padding: 20px;
+    line-height: 40px;
+  }
+  h1 span{
+      display: none;
+  }
+  header nav{
+    margin-left: 5px;
+    li{
+      line-height: 40px;
+      a {
+        font-size: 0.9em;
+        margin: 3px;
+        padding: 1px;
+      }
+    }
+  }
+  #famous article.woman {
+    float: none;
+    margin: 5px auto;
+    padding: 2%;
+    width: 80%
+  }
+  h2{
+    font-size: 2.0em;
+  }
+  #organizations{
+    height:auto;
+    ul li{
+      max-width: 100%;
+      img{
+        display:none;
+      }
+    }
+  }
+  footer nav li{
+     line-height: 40px;
+     a {
+       font-size: 0.9em;
+       margin: 3px;
+       padding: 1px;
+     }
+   }
+}

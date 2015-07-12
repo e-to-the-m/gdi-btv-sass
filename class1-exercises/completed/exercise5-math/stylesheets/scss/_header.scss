@@ -1,0 +1,31 @@
+header {
+  width: $headerWidth;
+  margin: $centered;
+  background-color: $accentBackground;
+  padding: 10px;
+  h1 {
+    color: $contrastColor;
+    background: url('../images/icons/it.png') no-repeat 0 50%;
+    padding-left: 40px;
+  }
+  nav {
+    float: right;
+    font-size: 1.2em;
+    margin-left: 20px;
+    li {
+      line-height: 75px;
+    }
+    a {
+      border-radius: 6px;
+      &:hover {
+        background-color: $contentBackground;
+      }
+    }
+  }
+  &:after {
+    /* clearfix hack */
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

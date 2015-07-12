@@ -1,0 +1,23 @@
+footer {
+  margin: $centered;
+  width: $layoutWidth;
+  background-image: -webkit-linear-gradient(#00665F, #1D766F, #00665F);
+  background-image: -moz-linear-gradient(#00665F, #1D766F, #00665F);
+  background-image: linear-gradient(#00665F, #1D766F, #00665F);
+  nav {
+    float: left;
+    font-size: 1.1em;
+    padding: $defaultPadding;
+    width: $footerWidth;
+    a:hover {
+      box-shadow: none;
+      color: $contrastColor;
+    }
+  }
+  &:after {
+    /* clearfix hack */
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
