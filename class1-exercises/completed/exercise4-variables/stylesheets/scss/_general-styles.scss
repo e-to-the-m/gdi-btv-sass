@@ -29,6 +29,10 @@ h1 {
   float: left;
   line-height: 75px;
   text-shadow: 2px 2px $textShadowColor;
+  @media screen and #{$mamaBear} {
+    font-size: 1.1em;
+    line-height: 40px;
+  }
 }
 
 h2 {
@@ -59,11 +63,11 @@ h4 {
 /* Fonts */
 @font-face {
   font-family: 'EntypoRegular';
-  src: url('../../font/Entypo-webfont.eot');
-  src: url('../../font/Entypo-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../../font/Entypo-webfont.woff') format('woff'),
-       url('../../font/Entypo-webfont.ttf') format('truetype'),
-       url('../../font/Entypo-webfont.svg#EntypoRegular') format('svg');
+  src: url('#{$fontPath}/Entypo-webfont.eot');
+  src: url('#{$fontPath}/Entypo-webfont.eot?#iefix') format('embedded-opentype'),
+       url('#{$fontPath}/Entypo-webfont.woff') format('woff'),
+       url('#{$fontPath}/Entypo-webfont.ttf') format('truetype'),
+       url('#{$fontPath}/Entypo-webfont.svg#EntypoRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }

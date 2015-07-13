@@ -29,6 +29,10 @@ h1 {
   float: left;
   line-height: 75px;
   text-shadow: 2px 2px $titleShadow;
+  @media screen and #{$mamaBear} {
+    font-size: 1.1em;
+    line-height: 40px;
+  }
 }
 
 h2 {

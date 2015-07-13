@@ -48,8 +48,8 @@
 
         <!-- Opening slide -->
         <section>
-          <h3>Download Class 1 Files:</h3>
-          <p class="blue" style="font-size: 3em; text-decoration: underline;">cfarm.co/sass1</p>
+          <h3>Download Class 1 Files</h3>
+          <a href="https://github.com/e-to-the-m/gdi-sass/tree/master/class1-exercises">Class 1 Exercises</a>
         </section>
 
 
@@ -274,8 +274,7 @@
         <section>
           <div class="center-align">
             <p>Refresh your index page.</p>
-            <p class="fragment">Boom, Sass, class is over.</p>
-            <p class="fragment"><img src="images/mic.gif" style="border: 0; width: 500px; height: 281px; box-shadow: none;"></p>
+            <p class="fragment">Boom, Sass, class is over.<img src="images/mic.gif" style="border: 0; width: 500px; height: 281px; box-shadow: none;"></p>
             <p class="fragment">Just kidding.</p>
           </div>
         </section>
@@ -322,7 +321,7 @@
               <li class="fragment">Import your partial into your main Sass file
                 <pre><code contenteditable class="sass css">@import "navigation";</code></pre>
               </li>
-              <li>The casacde still matters!</li>
+              <li class="fragment">The casacde still matters!</li>
             </ul>
           </div>
         </section>
@@ -356,16 +355,16 @@
           <div>
             <p>Sass input:</p>
             <pre><code contenteditable class ="sass css">header {
-  color: black;
+  color: #000;
   nav {
-    background: red;
-    a { color: white; }
+    background: #f00;
+    a { color: #fff; }
 }
 </code></pre>
             <p>CSS output:</p>
-            <pre><code contenteditable class ="css sass">header { color: black; }
-header nav { background: red; }
-header nav a { color: white; }</code></pre>
+            <pre><code contenteditable class ="css sass">header { color: #000; }
+header nav { background: #f00; }
+header nav a { color: #fff; }</code></pre>
           </div>
         </section>
 
@@ -375,16 +374,16 @@ header nav a { color: white; }</code></pre>
           <div>
             <p>Sass input:</p>
             <pre><code contenteditable class ="sass css">nav {
-    background: red;
+    background: #f00;
     a {
-      color: white;
+      color: #fff;
       &:hover { text-decoration: underline; }
     }
 }
 </code></pre>
             <p>CSS output:</p>
-            <pre><code contenteditable class ="css sass">nav { background: red; }
-nav a { color: white; }
+            <pre><code contenteditable class ="css sass">nav { background: #f00; }
+nav a { color: #fff; }
 nav a:hover { text-decoration: underline; }</code></pre>
           </div>
         </section>
@@ -729,9 +728,9 @@ p {
         <section>
           <h3>Let's Develop It</h3>
           <ul>
-          <li>Add some mixins to your _vars.scss file - a good candidate is any style that needs a browser prefix</li>
+          <li>Create a partial called _mixins.scss and import it into your styles.scss file</li>
           <li>Try replacing the footer gradient with a mixin</li>
-          <li>Use these mixins in your styles.scss file</li>
+          <li>Use these mixins in your Sass files</li>
           <li>Add different types of comments that describe what your mixins do, and check the final CSS in the browser inspector to see if they appear</li>
         </ul>
           <pre><code class ="sass css">@mixin name {

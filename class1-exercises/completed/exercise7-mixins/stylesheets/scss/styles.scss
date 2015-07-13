@@ -1,5 +1,5 @@
 @import "_vars";
-// This imports our styles from the _vars.scss so we can use them in our project
+@import "_mixins";
 
 @import "general-styles";
 @import "navigation";

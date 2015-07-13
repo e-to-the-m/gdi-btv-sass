@@ -18,6 +18,7 @@ $factsAccent: #ffa700; // bright yellow in facts section
 
 
  // Fonts!
+$fontPath: '../../font'; // the '' indicates a string.
 $title: 'Audiowide', cursive;
 $headings: 'Quicksand', sans-serif;
 $bodyText: 'Lato', Arial, sans-serif;
@@ -28,3 +29,7 @@ $defaultFontSize: 16px;
  // Layout
 $centered: 0 auto;
 $layoutWidth: 960px;
+
+//Media Query Breakpoints
+$mamaBear: '(max-width: #{$layoutWidth})';
+$babyBear: '(max-width: 480px)';

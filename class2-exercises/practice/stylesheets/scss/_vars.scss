@@ -1,12 +1,13 @@
-// Utilities file!
+// Utilities file! I'm adding lotsa variables for this exercise.
 
-// Colors! 
+// Colors!
 $bodyBackground: rgb(241, 241, 241); // light grey
 $accentBackground: #009D92; // teal
 $contrastColor: #FFEECC; // yellow
 $linkText: darken($accentBackground, 5%); // teal
 $linkHover: darken(invert($accentBackground), 30%); // red
 $titleShadow: lighten($accentBackground, 10%);
+$textShadowColor: rgba(255, 255, 255, 0.25);
 $contentBackground: #fff;
 $sectionHeadingBackground: darken($bodyBackground, 70%); // darkest grey
 $sectionHeading: #fff;
@@ -18,6 +19,7 @@ $factsAccent: darken($contrastColor, 40%); // bright yellow in facts section
 
 
  // Fonts!
+$fontPath: '../../font'; // the '' indicates a string.
 $title: 'Audiowide', cursive;
 $headings: 'Quicksand', sans-serif;
 $bodyText: 'Lato', Arial, sans-serif;
@@ -25,7 +27,7 @@ $bodyText: 'Lato', Arial, sans-serif;
 $defaultFontSize: 16px;
 
 
- // Layout 
+ // Layout
 $centered: 0 auto;
 $layoutWidth: 960px;
 $defaultPadding: 10px;
@@ -36,19 +38,6 @@ $articleWidth: $layoutWidth/3 - $defaultPadding*4;
 $listItemHeight: $defaultFontSize + $defaultPadding;
 $footerWidth: $headerWidth;
 
-// Mixins
-
-// Drop shadow (text-shadow) effect
-@mixin dropshadow($text) {
-  color: $text;
-  text-shadow: 2px 2px darken($text, 50%);
-}
-@mixin clearfix {
-
-}
-@mixin gradient() {
-
-}
-@mixin rotate($degree, $position) {
-
-}
+//Media Query Breakpoints
+$mamaBear: '(max-width: #{$layoutWidth})';
+$babyBear: '(max-width: 480px)';

@@ -35,3 +35,7 @@ $navLinkHeight: $defaultFontSize + $defaultPadding*2; // let's adjust the line h
 $articleWidth: $layoutWidth/3 - $defaultPadding*4;
 $listItemHeight: $defaultFontSize + $defaultPadding;
 $footerWidth: $headerWidth;
+
+//Media Query Breakpoints
+$mamaBear: '(max-width: #{$layoutWidth})';
+$babyBear: '(max-width: 480px)';

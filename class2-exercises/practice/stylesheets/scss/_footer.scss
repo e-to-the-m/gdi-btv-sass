@@ -1,0 +1,18 @@
+footer {
+  margin: $centered;
+  width: $layoutWidth;
+  @include gradient(#00665F, #1D766F);
+  nav {
+    float: left;
+    font-size: 1.1em;
+    padding: $defaultPadding;
+    width: $footerWidth;
+    a:hover {
+      box-shadow: none;
+      color: $contrastColor;
+    }
+  }
+  &:after {
+    @include clearfix;
+  }
+}

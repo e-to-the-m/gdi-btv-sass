@@ -1,15 +1,5 @@
-/** Tablet view **/
-@media screen and (max-width: $layoutWidth){
-  h1 {
-    font-size: 1.1em;
-    line-height: 40px;
-  }
-  header nav li{
-    line-height: 40px;
-  }
-}
 /** Mobile view **/
-@media screen and (max-width: 480px){
+@media screen and #{$babyBear} {
   h1{
     padding: 20px;
     line-height: 40px;
