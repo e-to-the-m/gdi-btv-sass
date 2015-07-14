@@ -2,4 +2,3 @@
 
 # Ignore sass-cache files.
 *.sass-cache*
-*.codekit
