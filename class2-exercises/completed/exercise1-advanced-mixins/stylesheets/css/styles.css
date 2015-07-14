@@ -1,8 +1,8 @@
 body {
-  background-image: -webkit-linear-gradient(#f1f1f1, #585858, #f1f1f1);
-  background-image: -moz-linear-gradient(#f1f1f1, #585858, #f1f1f1);
-  background-image: linear-gradient(#f1f1f1, #585858, #f1f1f1);
   background-color: #f1f1f1;
+  background-image: -webkit-linear-gradient(#f1f1f1, #009D92, #f1f1f1);
+  background-image: -moz-linear-gradient(#f1f1f1, #009D92, #f1f1f1);
+  background-image: linear-gradient(#f1f1f1, #009D92, #f1f1f1);
   font-family: "Lato", Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -81,8 +81,7 @@ nav li {
   line-height: 36px;
 }
 nav li a {
-  color: #fff;
-  text-shadow: 2px 2px gray;
+  color: #FFEECC;
   margin: 0 10px;
   padding: 5px 10px;
   text-decoration: none;
@@ -139,7 +138,7 @@ header nav a {
   border-radius: 6px;
 }
 header nav a:hover {
-  background-color: #fff;
+  background-color: #FFEECC;
 }
 header:after {
   content: "";

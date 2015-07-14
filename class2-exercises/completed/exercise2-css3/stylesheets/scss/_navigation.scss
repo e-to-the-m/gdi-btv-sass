@@ -1,0 +1,37 @@
+nav {
+  width: $navWidth;
+    li {
+    float: left;
+    height: 50px;
+    .arrow {
+      @include rightArrow(12px, 16px, $contrastColor);
+    }
+    a {
+      color: $navLink;
+      margin: 0 10px;
+      padding: 5px 10px;
+      text-decoration: none;
+      &:hover {
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}
+.jump {
+  color: $jumpIcon;
+  @include iconFont;
+  font-size: 70px;
+  line-height: 80px;
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+  &.up {
+    left: 15px;
+  }
+  &.down {
+    right: 15px;
+  }
+  &:hover {
+    color: $linkHover;
+  }
+}

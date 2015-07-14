@@ -1,0 +1,61 @@
+body {
+  background-color: $bodyBackground;
+  @include gradient;
+  font-family: $bodyText;
+  font-size: $defaultFontSize;
+  font-weight: 300;
+  line-height: 1.2em;
+  margin: 0px auto;
+  width: 100%;
+}
+
+p {
+  margin: 1em;
+}
+
+a {
+  color: $linkText;
+  text-decoration: none;
+  @include transition(color, $linkAccent, 0.3s);
+}
+
+h1 {
+  font-family: $title;
+  font-size: 2.2em;
+  float: left;
+  line-height: 75px;
+  text-shadow: 2px 2px $titleShadow;
+  @media screen and #{$mamaBear} {
+    font-size: 1.1em;
+    line-height: 40px;
+  }
+}
+
+h2 {
+  background-color: $sectionHeadingBackground;
+  color: $sectionHeading;
+  font-family: $headings;
+  font-size: 2.4em;
+  font-weight: 400;
+  line-height: 80px;
+  margin: 0 0 0.5em 0;
+  text-align: center;
+  @include inner-box-shadow(0px, 0px, 20px, 2px, #000);
+}
+
+h3 {
+  font-family: $headings;
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 0 0 0.3em 0;
+  text-align: center;
+}
+
+h4 {
+  color: $headingYears;
+  font-size: 1em;
+  text-align: center;
+}
+
+/* Fonts */
+@include fontFace('EntypoRegular', Entypo);

@@ -3,6 +3,8 @@ header {
   margin: $centered;
   background-color: $accentBackground;
   padding: 10px;
+  @include gradient($accentBackground, lighten($accentBackground, 8%));
+  @include opacity(0.8);
   h1 {
     color: $contrastColor;
     background: url('../images/icons/it.png') no-repeat 0 50%;
@@ -21,7 +23,8 @@ header {
     a {
       border-radius: 6px;
       &:hover {
-        background-color: $contentBackground;
+        background-color: $navLink;
+        @include opacity;
       }
     }
   }

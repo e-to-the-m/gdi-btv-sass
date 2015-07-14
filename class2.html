@@ -56,7 +56,7 @@
         <section>
           <h3>Review: Mixins</h3>
           <div class = "left-align">
-          <p class = "blue">If you haven't already, create these mixins in _vars:</p>
+          <p class = "blue">If you haven't already, create these mixins in _mixins:</p>
           <ul>
             <li>dropshadow/text-shadow style</li>
             <li>clearfix</li>
@@ -65,8 +65,8 @@
           <pre><code class ="php">@mixin example($optionalArgument) {
   property: value;
   property: $optionalArgument;
-}
-p {
+}</code></pre>
+<code><pre>p {
   @include example($optionalArgument);
 }
 </code></pre>
@@ -103,7 +103,7 @@ p {
         <section>
           <h3>Interpolation</h3>
           <div class="left-align">
-            With some styles, we may want to use variables right next to text, like with our image rotate style - try it in _vars:
+            With some styles, we may want to use variables right next to text, like with our image rotate style - try it in _mixins:
             <pre><code contenteditable class="sass css">@mixin rotate($degree, $position) {
   -webkit-transform: rotate(-5deg);
   -moz-transform: rotate(-5deg);
@@ -136,7 +136,10 @@ p {
         <section>
           <h3>@extend</h3>
           <div class="left-align">
-            Sometimes we have styles that duplicate another class, then add to it. We can use a mixin for these, OR we can use @extend:
+            Sometimes we have styles that duplicate another class, then add to it. We can use a mixin for these, OR we can use @extend.
+            <table class="code-compare">
+            <tr><td>
+            <p>Sass input:</p>
             <pre><code contenteditable class="sass css">.headline {
   font-size: 2em;
   font-weight: bold;
@@ -146,6 +149,18 @@ p {
   text-decoration: underline;
   text-transform: uppercase;
 }</code></pre>
+</td>
+<td>
+            <p>CSS output:</p>
+            <pre><code contenteditable class ="sass css">.headline, .lead-story-headline {
+  font-size: 2em;
+  font-weight: bold;
+}
+.lead-story-headline {
+  text-decoration: underline;
+  text-transform: uppercase;
+}</code></pre>
+          </tr></td></table>
 </div>
         </section>
 
@@ -161,7 +176,7 @@ p {
               <li>@extend to include common styles</li>
             </ul>
           </li>
-          <li>Use these mix-ins in your styles.scss file</li>
+          <li>Use these mix-ins in your Sass files</li>
           <li>Compile to CSS and refresh your index page to see your changes</li>
         </ul>
         </section>
@@ -191,8 +206,8 @@ p {
   background-image: -webkit-linear-gradient($color1, $color2, $color1);
   background-image: -moz-linear-gradient($color1, $color2, $color1);
   background-image: linear-gradient($color1, $color2, $color1);
-}
-@include gradient(#fff, #000);</code></pre>
+}</code></pre>
+<code><pre>@include gradient(#fff, #000);</code></pre>
 </div>
         </section>
 
@@ -225,11 +240,12 @@ p {
 <td>
             <p>CSS for icon:</p>
             <pre style="width: 650px"><code contenteditable class ="sass css">.icon {
-display: block;
-background: no-repeat url(images/youtube_sprite.png) -395px -114px;
-background-size: auto;
-width: 18px;
-height: 18px; }</code></pre>
+  display: block;
+  background: no-repeat url(images/youtube_sprite.png) -395px -114px;
+  background-size: auto;
+  width: 18px;
+  height: 18px;
+  }</code></pre>
 
           </tr></td></table>
         </div>
@@ -283,7 +299,7 @@ height: 18px; }</code></pre>
               <li>CSS shapes</li>
             </ul>
           </li>
-          <li>Use these mix-ins in your styles.scss file</li>
+          <li>Use these mix-ins in your Sass files</li>
           <li>Compile to CSS and refresh your index page to see your changes</li>
         </ul>
         </section>
@@ -309,7 +325,7 @@ height: 18px; }</code></pre>
               <li><a target="_blank" href="http://www.slideshare.net/stevehickeydsgn/forget-frameworks-create-your-own-flexible-grid-system">More info on making a grid system</a></li>
             </ul>
           </li>
-          <li>Use these mix-ins in your styles.scss file</li>
+          <li>Use these mix-ins in your Sass files</li>
           <li>Compile to CSS and refresh your index page to see your changes</li>
           <li><span class="blue">Bonus:</span>Write a mixin for responsive styles to be used in the media queries in styles.scss</li>
         </ul>
@@ -329,8 +345,8 @@ height: 18px; }</code></pre>
   } @else {
     opacity: $value;
   }
-}
-@include opacity(transparent);
+}</code></pre>
+<code><pre>@include opacity(transparent);
 </code></pre>
 
         </div>
